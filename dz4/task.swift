@@ -12,6 +12,6 @@ func myReduceInt(_ array: [Int], _ initial: Int, _ combine: (Int, Int) -> Int) -
     return accumulator
 }
 
-// 3. Тест кастомной функции
+// Тест кастомной функции
 let custom = myReduceInt(numbers, 1) { acc, val in acc * val }
 print("Кастомный: \(custom)")
